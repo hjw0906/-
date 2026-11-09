@@ -12,8 +12,8 @@ while True:  # 반복 시작
     else:  # 비밀번호가 틀리면
         count += 1  # 틀린 횟수 1 증가
         print("비밀번호가 틀렸습니다.")  # 틀렸다고 안내
-        if count == max_count:  # 3번 틀렸으면
-            print("3번 틀렸습니다.")  # 횟수 초과 안내
+        if count == max_count:  # 5번 틀렸으면
+            print("기회를 다 쓰셨습니다.")  # 횟수 초과 안내
             break  # 반복 종료
         else:  # 아직 기회가 남았으면
             print("남은 기회:", max_count - count)  # 남은 기회 출력
